@@ -58,5 +58,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 300px;
+}
+
+.submitBtn {
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 255, 0.3);
+    cursor: pointer;
+    border: none;
 }

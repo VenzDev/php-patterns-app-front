@@ -1,7 +1,7 @@
 import {Switch, Route} from "react-router-dom";
 import Login from "./views/Login/Login";
 import Dashboard from "./views/Dashboard/Dashboard";
-import Bike from "./views/Bike/Bike";
+import Bike from "./views/House/House";
 import {isLogged} from "./services/LocalStorage";
 import {useHistory} from "react-router";
 import Wrapper from "./components/Wrapper";
