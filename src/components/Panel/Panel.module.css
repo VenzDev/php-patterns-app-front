@@ -1,0 +1,35 @@
+.panel {
+    flex-basis: 30%;
+    background-color: white;
+    height: 100%;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: blue;
+    font-size: 2rem;
+}
+
+.user p {
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu > div > p {
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 255, 0.3);
+    cursor: pointer;
+}

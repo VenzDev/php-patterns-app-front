@@ -1,5 +1,6 @@
-.dashboard {
-    padding: 20px;
+.bikes {
+    flex-basis: 70%;
     display: flex;
     justify-content: space-around;
+    margin: 20px;
 }

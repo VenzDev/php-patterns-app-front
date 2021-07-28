@@ -1,15 +1,21 @@
 import s from "./Login.module.css";
 import {useState} from "react";
 import {login} from "../../api";
+import {setIsLogged} from "../../services/LocalStorage";
+import {useHistory} from "react-router";
 
 const Login = () => {
+    const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         let result = await login(email, password);
-        console.log(result);
+        if (result.status === 'success') {
+            setIsLogged(JSON.stringify(result.data));
+            history.push('/');
+        }
     }
 
     const handleEmail = e => setEmail(e.target.value);
